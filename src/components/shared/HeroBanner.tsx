@@ -83,7 +83,7 @@ export function HeroBanner() {
             {/* Content Container */}
             <div className='absolute inset-0 flex h-full w-full items-center'>
               <div className='mx-auto w-full max-w-7xl space-y-3 px-6 text-white sm:space-y-5 md:px-12'>
-                <span className='inline-block rounded-full bg-white/20 px-3 py-1 text-[10px] font-bold tracking-widest uppercase backdrop-blur-md md:text-xs'>
+                <span className='inline-block rounded-full border border-white/60 px-3 py-1 text-[10px] font-bold tracking-widest uppercase md:text-xs'>
                   {slide.tag}
                 </span>
                 <h1
@@ -101,7 +101,7 @@ export function HeroBanner() {
                 <div className='pt-2'>
                   <Link
                     href={slide.link}
-                    className='ant-btn-primary inline-flex items-center justify-center rounded-full px-6 py-3 text-xs font-bold tracking-wider text-white uppercase shadow-lg transition-transform hover:scale-105 sm:text-sm'
+                    className='inline-flex items-center justify-center rounded-full px-6 py-3 text-xs font-bold tracking-wider uppercase shadow-lg transition-transform border border-white/60 hover:scale-105 sm:text-sm [&]:!text-white'
                   >
                     {slide.cta}
                   </Link>

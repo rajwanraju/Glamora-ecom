@@ -10,12 +10,12 @@ const concerns = [
   },
   {
     label: 'Brightening',
-    image: 'https://images.unsplash.com/photo-1608248597481-496100c80836?w=300&h=300&fit=crop&auto=format',
+    image: 'https://images.unsplash.com/photo-1619451427882-6aaaded0cc61?w=300&h=300&fit=crop&auto=format',
     bg: '#fceae0',
   },
   {
     label: 'Hair Fall',
-    image: 'https://images.unsplash.com/photo-1522337094133-f3750226488a?w=300&h=300&fit=crop&auto=format',
+    image: 'https://plus.unsplash.com/premium_photo-1671148838520-638463b5790d?w=300&h=300&fit=crop&auto=format',
     bg: '#fdf0e8',
   },
   {

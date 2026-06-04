@@ -79,8 +79,7 @@ export function PromoSection() {
             <div className='mt-4 flex items-end justify-between gap-2'>
               <Link
                 href='/product'
-                className='px-4 py-2 bg-white text-xs font-bold rounded-full uppercase tracking-wider shadow hover:scale-105 transition-transform'
-                style={{ color: '#b85c6e' }}
+                className='ant-btn-primary px-4 py-2 bg-white text-xs font-bold rounded-full uppercase tracking-wider shadow hover:scale-105 transition-transform'
               >
                 Shop Now
               </Link>
@@ -119,7 +118,7 @@ export function PromoSection() {
             </div>
             <Link
               href='/product'
-              className='relative z-10 self-start px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-white/60 hover:bg-white hover:text-black transition-colors'
+              className='relative z-10 self-start px-4 py-2 rounded-full text-xs text-white font-bold uppercase tracking-wider border border-white/60 transition-colors [&]:!text-white hover:bg-white hover:[&]:!text-black hover:bg-white hover:text-black transition-colors'
             >
               Explore →
             </Link>
@@ -128,7 +127,7 @@ export function PromoSection() {
           {/* Card 3: Brand Deals */}
           <div className='group rounded-2xl overflow-hidden relative flex flex-col justify-between p-6 min-h-[260px] shadow-sm hover:shadow-lg transition-all duration-300 text-white'>
             <img
-              src='https://images.unsplash.com/photo-1522338258058-06285223c91c?w=600&fit=crop'
+              src='https://plus.unsplash.com/premium_photo-1670584248601-187ba4c8b301?w=600&fit=crop'
               alt='Exclusive brand deals'
               className='absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700'
             />
@@ -148,7 +147,7 @@ export function PromoSection() {
             </div>
             <Link
               href='/product'
-              className='relative z-10 self-start px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-white/60 hover:bg-white hover:text-black transition-colors'
+              className='relative z-10 self-start px-4 py-2 rounded-full text-xs text-white font-bold uppercase tracking-wider border border-white/60 transition-colors [&]:!text-white hover:bg-white hover:[&]:!text-black hover:bg-white hover:text-black transition-colors'
             >
               See Deals →
             </Link>
@@ -157,7 +156,7 @@ export function PromoSection() {
           {/* Card 4: Free Gifts */}
           <div className='group rounded-2xl overflow-hidden relative flex flex-col justify-between p-6 min-h-[260px] shadow-sm hover:shadow-lg transition-all duration-300 text-white'>
             <img
-              src='https://images.unsplash.com/photo-1601049676099-e7ed07d825b0?w=600&fit=crop'
+              src='https://images.unsplash.com/photo-1635868388791-6d2987bb59cb?w=600&fit=crop'
               alt='Free gifts campaign'
               className='absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700'
             />
@@ -177,7 +176,7 @@ export function PromoSection() {
             </div>
             <Link
               href='/product'
-              className='relative z-10 self-start px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-white/60 hover:bg-white hover:text-black transition-colors'
+              className='btn relative z-10 self-start px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-white/60 transition-colors [&]:!text-white hover:bg-white hover:[&]:!text-black hover:bg-white hover:[&]:!text-black'
             >
               Claim Gift →
             </Link>

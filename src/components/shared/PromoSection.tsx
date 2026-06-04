@@ -79,7 +79,7 @@ export function PromoSection() {
             <div className='mt-4 flex items-end justify-between gap-2'>
               <Link
                 href='/product'
-                className='ant-btn-primary px-4 py-2 bg-white text-xs font-bold rounded-full uppercase tracking-wider shadow hover:scale-105 transition-transform'
+                className='px-2 py-2 bg-white text-xs font-bold rounded-full uppercase tracking-wider shadow border border-white/60 [&]:!text-white hover:scale-105 transition-transform'
               >
                 Shop Now
               </Link>
@@ -118,7 +118,7 @@ export function PromoSection() {
             </div>
             <Link
               href='/product'
-              className='relative z-10 self-start px-4 py-2 rounded-full text-xs text-white font-bold uppercase tracking-wider border border-white/60 transition-colors [&]:!text-white hover:bg-white hover:[&]:!text-black hover:bg-white hover:text-black transition-colors'
+              className='relative z-10 self-start px-4 py-2 rounded-full text-xs text-white font-bold uppercase tracking-wider border border-white/60 transition-colors [&]:!text-white hover:bg-white hover:scale-105 hover:bg-white hover:text-black transition-colors'
             >
               Explore →
             </Link>
@@ -147,7 +147,7 @@ export function PromoSection() {
             </div>
             <Link
               href='/product'
-              className='relative z-10 self-start px-4 py-2 rounded-full text-xs text-white font-bold uppercase tracking-wider border border-white/60 transition-colors [&]:!text-white hover:bg-white hover:[&]:!text-black hover:bg-white hover:text-black transition-colors'
+              className='relative z-10 self-start px-4 py-2 rounded-full text-xs text-white font-bold uppercase tracking-wider border border-white/60 transition-colors [&]:!text-white hover:bg-white hover:scale-105 hover:bg-white hover:text-black transition-colors'
             >
               See Deals →
             </Link>
@@ -176,7 +176,7 @@ export function PromoSection() {
             </div>
             <Link
               href='/product'
-              className='btn relative z-10 self-start px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-white/60 transition-colors [&]:!text-white hover:bg-white hover:[&]:!text-black hover:bg-white hover:[&]:!text-black'
+              className='btn relative z-10 self-start px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider border border-white/60 transition-colors [&]:!text-white hover:bg-white hover:scale-105 hover:bg-white'
             >
               Claim Gift →
             </Link>

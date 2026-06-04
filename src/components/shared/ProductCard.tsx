@@ -75,7 +75,7 @@ export function ProductCard({ product, onClick }: ProductCardProps) {
           </span>
         )}
         {discount && (
-          <span className='absolute top-3 right-10 text-white text-xs px-2 py-0.5 rounded-full bg-green-600'>
+          <span className='absolute top-3 right-12 text-white text-xs px-2 py-0.5 rounded-full bg-green-600'>
             -{discount}%
           </span>
         )}

@@ -1,0 +1,152 @@
+@import 'tailwindcss';
+
+/** == == == == ==> tw variables <== == == == == **/
+@theme {
+  --color-primary: #b85c6e;
+  --color-primary-hover: #cf6f81;
+  --color-primary-active: #9c4959;
+  --color-success: #37c553;
+  --color-error: #ff6666;
+  --color-warning: #ffa800;
+  --color-link: #b85c6e;
+  --color-link-hover: #cf6f81;
+  --color-link-active: #9c4959;
+  --color-white: #ffffff;
+  --color-black: #2c1a0e;
+  --color-gray: #8a6a5e;
+  --color-background: #fdf8f5;
+  --color-foreground: #2c1a0e;
+  --color-secondary: #f5ede8;
+  --color-secondary-foreground: #2c1a0e;
+  --color-muted: #f0e8e3;
+  --color-muted-foreground: #8a6a5e;
+  --color-accent: #e8c4b0;
+  --color-accent-foreground: #2c1a0e;
+  --color-destructive: #d4183d;
+  --color-border: rgba(184, 92, 110, 0.15);
+  --font-inter: var(--font-jost), sans-serif;
+  --font-poppins: var(--font-playfair), serif;
+  --font-jost: var(--font-jost), sans-serif;
+  --font-playfair: var(--font-playfair), serif;
+  --radius-default: 20px;
+}
+
+/** == == == == ==> root css <== == == == == **/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  font-size: 14px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-jost), sans-serif;
+}
+
+/** == == == == ==> scrollbar styles <== == == == == **/
+/* for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) var(--color-gray);
+}
+
+/* for webkit-based browsers (chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px var(--color-gray);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gray);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/** == == == == ==> utilities styles <== == == == == **/
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/** == == == == ==> ant design <== == == == == **/
+.ant-btn-primary {
+  color: #ffffff !important;
+  background-color: var(--color-primary) !important;
+}
+.ant-btn-primary:hover {
+  color: #ffffff !important;
+  background-color: var(--color-primary-hover) !important;
+}
+
+.ant-modal-mask {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.ant-input-group-addon {
+  @apply !bg-[#1D1D1D] hover:!bg-[#3D3D3D];
+}
+
+.ant-modal-confirm-btns .ant-btn-primary {
+  @apply !bg-success;
+}
+
+.ant-table-cell {
+  border-radius: 0px !important ;
+  border-bottom: 1px solid var(--color-gray) !important;
+  border-inline-end: 1px solid var(--color-gray) !important;
+}
+.ant-table-content table {
+  border-top: 1px solid var(--color-gray) !important;
+  border-left: 1px solid var(--color-gray) !important;
+}
+
+/** == == == == ==> components styles <== == == == == **/
+@layer components {
+  /* navbar style start */
+  .mobile-menu {
+    left: -200%;
+    transition: 0.5s;
+  }
+  .mobile-menu.active {
+    left: 0;
+  }
+  .mobile-menu ul li ul {
+    display: none;
+  }
+  .mobile-menu ul li:hover ul {
+    display: block;
+  }
+  /* navbar style end */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 22s linear infinite;
+}

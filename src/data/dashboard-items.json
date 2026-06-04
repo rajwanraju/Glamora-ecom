@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Card One",
+    "description": "This is the description of the card.",
+    "imageURL": "https://plus.unsplash.com/premium_photo-1661767467261-4a4bed92a507"
+  },
+  {
+    "id": 2,
+    "title": "Card Two",
+    "description": "This is the description of the card.",
+    "imageURL": "https://plus.unsplash.com/premium_photo-1661421734418-124a25f6362d"
+  },
+  {
+    "id": 3,
+    "title": "Card Three",
+    "description": "This is the description of the card.",
+    "imageURL": "https://plus.unsplash.com/premium_photo-1661378650477-a3554f1453a9"
+  },
+  {
+    "id": 4,
+    "title": "Card Four",
+    "description": "This is the description of the card.",
+    "imageURL": "https://plus.unsplash.com/premium_photo-1661328115208-e9e581201e05"
+  },
+  {
+    "id": 5,
+    "title": "Card Five",
+    "description": "This is the description of the card.",
+    "imageURL": "https://plus.unsplash.com/premium_photo-1661391767689-9704e60a42c9"
+  }
+]
